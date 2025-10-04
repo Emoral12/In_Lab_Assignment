@@ -64,4 +64,5 @@ Spawner
 Overall, this design pattern was immensely benefical as it allowed for me to easily and endlessly spawn a myriad of collectibles through one single pair of game objects. Instead of having to make several scripts and blueprints for each collectible, I simply had to design one main pair of blueprints to handle spawning and execute spawning. I will certainly be utilizing this design pattern in the future as it is immensely useful and versatile.
 
 Now below lies the illustration/diagram of how I implemented Factory and my thought behind what I did.
-<img width="1102" height="502" alt="image" src="https://github.com/user-attachments/assets/e1669fd1-5c3e-4e0a-877e-4248506c45af" />
+
+<img width="1890" height="1417" alt="GED-Lab-2-Illustration" src="https://github.com/user-attachments/assets/4fd68f5d-b86b-4c53-a3ba-f4f7a9f3b7a6" />
