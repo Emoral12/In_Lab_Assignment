@@ -52,8 +52,8 @@ Images to backup my mad ramblings here:
 <img width="1919" height="1023" alt="Screenshot 2025-09-19 183509" src="https://github.com/user-attachments/assets/e7eb7da3-68e9-49d7-aa8b-9311a892029c" />
 
 # In-Lab Activity 2
-The game still maintains  rudamentary form, but now has more features implemented into the previously super rudamentary build. Now, with the help of the implemented Factory design
-pattern, the player will have to constantly walk around the base level area to find the gems they must collect to gain ever-higher scores (which is still a basic plane with walls as it is still out of scope to make a ful fledged map for this minautre game). Additionally, I added multiple different collectible items; each having a unique amount of points given when collected and different colors to properly distinguish them between one another. The list of collectibles would be as follows: pyrite (-10 points), coal (+10 points), gold (+100 points), sapphires (+500 points), rubies (+700 points), and diamonds (+1000 points). The implemented Factory pattern allows for them to be randomly selected from an array and placed within the level area. The Factory design pattern was implemented through a set of blueprints based-off of (but not entirely identical) to Professor Alvaor's instructional example on how to implement the Factory design pattern in Unreal Engine (see images below).
+The game still maintains rudamentary form, but now has more features implemented into the previously super rudamentary build. Now, with the help of the implemented Factory design
+pattern, the player will have to constantly walk around the base level area to find the gems they must collect to gain ever-higher scores (which is still a basic plane with walls as it is still out of scope to make a ful fledged map for this minautre game). Additionally, I added multiple different collectible items; each having a unique amount of points given when collected and different colors to properly distinguish them between one another. The list of collectibles would be as follows: pyrite (-10 points), coal (+10 points), gold (+100 points), sapphires (+500 points), rubies (+700 points), and diamonds (+1000 points). The implemented Factory pattern allows for them to be randomly selected from an array and placed within the level area. The Factory design pattern was implemented through a set of blueprints based-off of (but not entirely identical) to Professor Alvarp's instructional example on how to implement the Factory design pattern in Unreal Engine (see images below).
 
 SpawnManager
 <img width="1102" height="502" alt="image" src="https://github.com/user-attachments/assets/4930080b-e080-4669-b89d-0bb5a2a50e4b" />
@@ -66,3 +66,19 @@ Overall, this design pattern was immensely benefical as it allowed for me to eas
 Now below lies the illustration/diagram of how I implemented Factory and my thought behind what I did.
 
 <img width="1890" height="1417" alt="GED-Lab-2-Illustration" src="https://github.com/user-attachments/assets/4fd68f5d-b86b-4c53-a3ba-f4f7a9f3b7a6" />
+
+
+# In-Lab Assignment 3
+Due to my lack in artistic skills, the game still remains in rudamentary shape when it comes to assets (with everything still being primitive shapes). However, with regards to programming and design pattern implementations, I have now impelemnted the Observer design. The implemented Observer design (a Blueprint Interface) awaits for certain conditions to be fulfilled for the activation of an upgrade feature. Now, whenever the player gathers a certain amount of points, the spawn point from which the player starts up will be upgraded. The present thresholds for upgrades are 100 points, 500 points, and 1000 points; however with how I've designed my Observer pattern it is incredibly easy to implement more upgrades and add new thresholds. The Observer pattern is called during every frame and only alters the game when the conditions of point thresholds are met, thus allowing for the player's spawn point (which is intended as a safezone/fortress) to be upgraded on the fly. The design pattern is implemented through a set of blueprints that roughly follows the principles thought by professor Alvaro, differing greatly however in the sense that they do not utilize any timers or variable setters, as it is incredibly easy to change the static mesh of the player safezone (see images below).
+
+Observer is called.
+<img width="635" height="290" alt="image" src="https://github.com/user-attachments/assets/85fbba1d-ffe4-4559-a395-f789216bad23" />
+
+Observer's line of logic before being called.
+<img width="1853" height="840" alt="image" src="https://github.com/user-attachments/assets/71f38019-f5d1-467d-aab7-c7f86db0d4d6" />
+
+Now below lies the illustration/diagram of the logic behind my Observer pattern:
+
+<img width="1890" height="1417" alt="In-Lab-3" src="https://github.com/user-attachments/assets/a71ccd96-1158-43f8-9f72-4ecf95ff24d3" />
+
+This design pattern is easy to comprehend and implement. However, in regards to a reflection, the design pattern does not shine in its fullest to the seemingly minimal change that occurs when its conditions for an execute are met. With proper art assets, the design pattern implementation would shine birghter; thus making me conclude that I must focus as well on the art assets for my game prototype.
